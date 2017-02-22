@@ -388,3 +388,8 @@ footer {
     background-color: #333333;
     color: #F2F2F2;
 }
+
+footer a:hover {
+    color: #871719;
+    cursor: pointer;
+}
