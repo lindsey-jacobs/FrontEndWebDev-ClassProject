@@ -390,6 +390,12 @@ footer a:hover {
     cursor: pointer;
 }
 
+footer .text-left,
+footer .text-right {
+  font-size: 0.75em;
+  width: 48%;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -418,5 +424,9 @@ footer a:hover {
     width: 20%;
     float: right;
     margin: 0;
+  }
+  footer .text-left,
+  footer .text-right {
+    font-size: 1em;
   }
 }
