@@ -9,7 +9,7 @@ Classroom activity for front-end web dev class
     a. Look at style.css and look for the grid system section.  Make the .span_1_of_2 class have a width of 48.2%.
     b. Find the Nav selector in style.css and give it a top margin of 4em.
 4. Update to include _"louies-logo.svg"_ with the _"alt"_ tag of "Louie's Pizza logo and tagline" and with a class of _"nav-logo"_
-5. Update to include an unordred list of links inside the _"nav"_ tag to: 
+5. Update to include an unordred list of links inside the _"nav"_ tag to:
     a. Welcome
     b. History
     c. Menu
@@ -61,7 +61,7 @@ Time for a history lesson!  Let's complete the History Section of the site.
 
 1.) Find the history section in index.html.
 2.) As before, use our grid system classes (wrap, section, group, col_ span_{x}_of_2) to create two columns.  
-3.) On the left column: 
+3.) On the left column:
     a.) add a subheading of "Louie's History".
     b.) add the following paragraphs:
     ```Louie’s was founded in 1929 by Italian immigrant Louie Bianchi. Louie’s was Originally established on Main Street, in the Heart of Louisville. After losing his lease on Main Street, Louie Bianchi dismantled his original coal fired brick oven and moved it to 271 Clay Street where he continued to run and grow his business and refine his pizza recipe to perfection.```
@@ -127,3 +127,13 @@ You'll need to install git on your machine in order to proceed.  https://git-scm
 6.) Use the git command to check the status of your local repo.  Are there any changes?
 7.) Use the git command for commiting changes, be sure to include a useful commit message.  
 8.) Use the git command to push the code to your fork of the original repo.  Go to your fork of the repo on Github to see if your changes persisted.  
+
+#Week 6 Challenge
+
+"Time to go mobile." - Bane
+
+With a few minor css changes, we can turn our site into a mobile-first, responsive site.
+
+1.) Since we're going mobile-first, let's adjust the .span_1_of_2 class to be 100% by default. 2.) Let's make our site menu list items display block by default and remove the extra margin above the menu. 3.) Give the .nwsltr-btn and .nwsltr-input the display block property. Remove any extra margin or padding, the should span the full width of the page.
+4.) Now add a media query that applies to screens with a minimum width of 994px.
+5.) Inside the media query give the .span_1_of_2 class its original width of 49.2%. a) Give the nav element a top margin of 4em; b) Reapply our css for the nav li elements. (width: 24.95%; max-width: 110px; border-bottom: none; display: inline-block;) c) Give .nwsltr-input a width of 70% and float it to the left; d) Give .nwsltr-btn a width of 20% and float it to the right; 6.) Test your site by either shrinking the size of your browser, or using the Device Toolbar in Google Chrome.
