@@ -6,26 +6,26 @@ $.ajax(menuData).done(function(data) {
     //Find exisiting food container
     var foodContainer = $('#foodcontainer');
 
-    //Create an empty array to hold a pair of menu tables.  
+    //Create an empty array to hold a pair of menu tables.
     var menuRow = [];
 
-    data.Food.forEach(function(foodSection, index){      
+    data.Food.forEach(function(foodSection, index){
         var table = buildTable(foodSection);
         menuRow.push(table);
 
-        //We draw a row of tables after each set of two tables, or if it's the last table.  
+        //We draw a row of tables after each set of two tables, or if it's the last table.
         if(!(index % 2 === 0) || index == (data.Food.length - 1)) {
             var sectionGroup = $('<div class="section group">');
             sectionGroup.append(menuRow);
-        
+
             //Add my section group div to my food container div.
             foodContainer.append(sectionGroup);
-            
-            //Clear my pair of menus since they have been appended to a section group.  
+
+            //Clear my pair of menus since they have been appended to a section group.
             menuRow = [];
-        }     
+        }
     });
- 
+
 });
 
 
@@ -46,4 +46,23 @@ function buildTable(section) {
    wrapper.append(table);
 
    return wrapper;
+}
+
+
+
+function initMap() {
+  var uluru = {lat: 38.275, lng: -85.740};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
 }
