@@ -31,36 +31,36 @@
 
       <div class="section group">
 
-      <div class="col span_1_of_2">
+        <div class="col span_1_of_2">
 
-        <a href="#"><img src="img/louies-logo.svg" alt="Louie's Pizza logo and tagline" class="nav-logo"></a>
+          <a href="#"><img src="img/louies-logo.svg" alt="Louie's Pizza logo and tagline" class="nav-logo"></a>
+
+        </div>
+
+        <div class="col span_1_of_2">
+
+          <nav class="main-nav" id="main-nav" role="navigation">
+              <ul>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+
+        </div>
 
       </div>
 
-      <div class="col span_1_of_2">
+        <div class="hero-text span_2_of_2">
 
-        <nav class="main-nav" id="main-nav" role="navigation">
-            <ul>
-              <li><a href="#">Welcome</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+          <h1>World's Favorite Pizza!</h1>
 
-      </div>
+          <p>Located on Clay Street, in NuLu, Louie’s Pizza is part of one of Louisville’s most lively neighborhoods. In close proximity to Downtown and near Washington Park, our NuLu pizzeria has a cool atmosphere suited for anyone looking to find a spot to hang out.</p>
 
-      </div>
+          <a href="#" class="hero-button">View Menu</a>
 
-      <div class="hero-text span_2_of_2">
-
-        <h1>World's Favorite Pizza!</h1>
-
-        <p>Located on Clay Street, in NuLu, Louie’s Pizza is part of one of Louisville’s most lively neighborhoods. In close proximity to Downtown and near Washington Park, our NuLu pizzeria has a cool atmosphere suited for anyone looking to find a spot to hang out.</p>
-
-        <a href="#" class="hero-button">View Menu</a>
-
-    </div>
+        </div>
 
   </div>
 
@@ -167,46 +167,52 @@
 <section id="contact" class="contact" name="contact">
   <div class="wrap">
     <div class="section group">
-      <h2>CONTACT LOUIE</h2>
-      <div class="col span_1_of_2">
+
+      <h2>CONTACT LOUIE</h2><br>
+
+      <div id="phone" class="col">
         <h4>PHONE: <span class="yellow">502-674-7856</span></h4>
         <p>271 Clay Street<br>Louisville, KY 40220</p>
         <br>
       </div>
 
-      <div class="col span_1_of_2">
+      <div id="hours" class="col">
         <h4><span class="yellow">STORE HOURS</span></h4>
         <p>Mon - Thurs: 11am - 9:30pm
         <br>Fri-Sat: 11am - 11pm
         <br>Sun: 11:30pm - 9:30pm</p>
       </div>
 
-      <div class="col span_1_of_2">
+      <div id="contactInput" class="span_1_of_2">
 
+        <!-- Form -->
         <form id="contact-form" method="post">
 
+          <!-- Name -->
           <label class="contact-label">Name</label>
           <input class="contact-input" type="name" placeholder="John Smith" id="name-field">
 
+          <!-- Email -->
           <label class="contact-label">Email</label>
           <input class="contact-input" type="email" placeholder="jsmith@gmail.com" id="email-field">
 
+          <!-- Phone -->
           <label class="contact-label">Phone</label>
           <input class="contact-input" type="phone" placeholder="502-955-7852" id="phone-field">
 
       </div>
 
-      <div class="col span_1_of_2">
+        <div id="contactMessage" class="span_1_of_2">
+          <!-- Comment -->
+          <label class="contact-label">Comment</label>
 
-        <label class="contact-label">Comment</label>
+          <textarea id="comment-field" name="comment" form="contact-form" placeholder="Your message here..."></textarea>
 
-        <textarea name="comment" form="contact-form" id="comment-field" placeholder="Your message here..."></textarea>
+          <button class="contact-btn" type="submit">Send Comment</button>
 
-        <button class="contact-btn" type="submit">Send Comment</button>
+        </div>
 
-      </div>
-
-      </form>
+        </form>
 
     </div>
   </div>
