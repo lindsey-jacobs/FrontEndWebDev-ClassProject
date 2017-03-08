@@ -350,6 +350,10 @@ input.button:hover {
   background-color: #E8D5B5;
 }
 
+#contact {
+  background: #006f3b;
+  color: white;
+}
 /* ==========================================================================
    Section Details
    ========================================================================== */
@@ -383,6 +387,10 @@ input.button:hover {
 
 .red {
   color: #871719;
+}
+
+.yellow {
+  color: #ffc301;
 }
 
 footer {
@@ -430,6 +438,13 @@ footer .text-right {
     float: right;
     margin: 0;
   }
+
+  .contact-btn {
+    width: 100%;
+    float: right;
+    margin: 0;
+  }
+
   footer .text-left,
   footer .text-right {
     font-size: 1em;
