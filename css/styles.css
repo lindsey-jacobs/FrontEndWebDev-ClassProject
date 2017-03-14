@@ -360,6 +360,7 @@ input.button:hover {
 #contact {
   background: #006f3b;
   color: white;
+  padding: 5px 0;
 }
 
 .contact-input {
